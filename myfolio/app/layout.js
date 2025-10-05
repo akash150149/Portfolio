@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
             <Link href="/" className="hover:text-blue-400 transition">Home</Link>
             <Link href="/about" className="hover:text-blue-400 transition">About</Link>
             <Link href="/projects" className="hover:text-blue-400 transition">Projects</Link>
-            <Link href="/blogs" className="hover:text-blue-400 transition">Blogs</Link>
+            {/* <Link href="/blogs" className="hover:text-blue-400 transition">Blogs</Link> */}
             <Link href="/contact" className="hover:text-blue-400 transition">Contact</Link>
           </nav>
         </header>
