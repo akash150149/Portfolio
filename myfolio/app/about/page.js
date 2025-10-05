@@ -1,8 +1,11 @@
 export default function AboutPage() {
   return (
-    <div>
-      <h1 className="text-2xl font-bold">About Me</h1>
-      <p className="mt-2">I'm a web developer with experience in React, Node.js, and now learning Next.js.</p>
+    <div className="p-6">
+      <h1 className="text-4xl font-bold mb-4">About Me</h1>
+      <p className="text-lg text-gray-700">
+        I’m Akash Poddar, a full-stack developer skilled in React, Node.js, and Next.js.  
+        This page is dedicated to sharing more about my journey, skills, and passion for building impactful projects.
+      </p>
     </div>
   );
 }

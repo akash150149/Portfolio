@@ -1,12 +1,12 @@
 'use client';
 import Link from 'next/link';
-import VantaBirds from '../components/VantaBirds'
+// import VantaBirds from '../components/VantaBirds'
 
 export default function HomePage() {
   return (
     <>
       {/* Birds Background - Outside main container */}
-      <VantaBirds />
+      {/* <VantaBirds /> */}
       
       {/* Content with transparency */}
       <main className="relative z-10 space-y-20 scroll-smooth">
@@ -40,6 +40,29 @@ export default function HomePage() {
         <section id="projects" className="p-6 rounded-xl bg-gray-900/50 backdrop-blur-lg text-white shadow-xl border border-white/20">
           <h2 className="text-3xl font-semibold mb-6 drop-shadow-lg">Featured Projects</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+
+            {/* Project: MedChain*/}
+            <li className="p-4 border border-white/20 rounded-lg shadow-lg hover:shadow-xl transition bg-black/20 backdrop-blur-sm hover:bg-black/30">
+              <h3 className="text-xl font-bold drop-shadow-md">MedChain</h3>
+              <p className="text-white/80">
+                A decentralized web-based system for authenticating medicines and preventing counterfeiting, built on Filecoin and Hypergraph.
+                <br />
+                <a
+                  href="https://github.com/debjitmitra000/MedChain"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 underline mt-2 inline-block hover:text-blue-300"
+                >
+                  View on GitHub
+                </a>
+                <br />
+                <Link href="/projects/aero" className="text-blue-400 underline mt-1 inline-block hover:text-blue-300">
+                  View Details
+                </Link>
+              </p>
+            </li>
+
             {/* Project: Apna */}
             <li className="p-4 border border-white/20 rounded-lg shadow-lg hover:shadow-xl transition bg-black/20 backdrop-blur-sm hover:bg-black/30">
               <h3 className="text-xl font-bold drop-shadow-md">Apna - Web3 Property Marketplace</h3>
@@ -61,26 +84,7 @@ export default function HomePage() {
               </p>
             </li>
 
-            {/* Project: Aero */}
-            <li className="p-4 border border-white/20 rounded-lg shadow-lg hover:shadow-xl transition bg-black/20 backdrop-blur-sm hover:bg-black/30">
-              <h3 className="text-xl font-bold drop-shadow-md">Aero - Airline Booking System</h3>
-              <p className="text-white/80">
-                Fully functional MERN airline booking system with Razorpay integration.
-                <br />
-                <a
-                  href="https://github.com/akash150149/aero"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 underline mt-2 inline-block hover:text-blue-300"
-                >
-                  View on GitHub
-                </a>
-                <br />
-                <Link href="/projects/aero" className="text-blue-400 underline mt-1 inline-block hover:text-blue-300">
-                  View Details
-                </Link>
-              </p>
-            </li>
+            
           </ul>
         </section>
 

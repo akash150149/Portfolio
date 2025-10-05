@@ -1,8 +1,5 @@
 import Link from 'next/link';
-import Script from 'next/script';
-import './globals.css'; // This includes Tailwind styles
-import MobileSidebar from '../components/MobileSlidebar';
-import DropdownMenu from '../components/DropdownMenu';
+import './globals.css'; // Tailwind styles
 
 export const metadata = {
   title: 'My Portfolio',
@@ -12,29 +9,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-sans p-4 scroll-smooth">
-         <MobileSidebar />
-          <DropdownMenu />
-        {/* Vanta.js Scripts - Add these */}
-        <Script 
-          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script 
-          src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
-          strategy="beforeInteractive"
-        />
-
-        {/* <header className="border-b pb-2 mb-4">
-         <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-8 text-white p-4 z-50 shadow space-x-4 backdrop-blur-md">
-            <Link href="/#home" className="text-blue-600 hover:underline">Home</Link>
-            <Link href="/#about" className="text-blue-600 hover:underline">About</Link>
-            <Link href="/#projects" className="text-blue-600 hover:underline">Projects</Link>
-            <Link href="/#blogs" className="text-blue-600 hover:underline">Blog</Link>
-            <Link href="/#contact" className="text-blue-600 hover:underline">Contact</Link>
+      <body className="font-sans scroll-smooth bg-gray-100">
+        {/* 🧭 Static Navbar */}
+        <header className="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-md text-white shadow-md z-50">
+          <nav className="flex justify-center space-x-8 py-4">
+            <Link href="/" className="hover:text-blue-400 transition">Home</Link>
+            <Link href="/about" className="hover:text-blue-400 transition">About</Link>
+            <Link href="/projects" className="hover:text-blue-400 transition">Projects</Link>
+            <Link href="/blogs" className="hover:text-blue-400 transition">Blogs</Link>
+            <Link href="/contact" className="hover:text-blue-400 transition">Contact</Link>
           </nav>
-        </header> */}
-        <main>{children}</main>
+        </header>
+
+        {/* Main Content */}
+        <main className="pt-20 px-6">{children}</main>
       </body>
     </html>
   );
