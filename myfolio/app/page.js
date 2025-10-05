@@ -85,7 +85,7 @@ export default function HomePage() {
           </ul>
         </section>
 
-        {/* Blogs Section - Glass morphism effect */}
+        {/* Blogs Section - Glass morphism effect
         <section id="blogs" className="p-6 rounded-xl bg-gray-800/40 backdrop-blur-md text-white shadow-lg border border-white/10">
           <h2 className="text-3xl font-semibold mb-4 drop-shadow-lg">My Blogs</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -118,7 +118,7 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
         <section id="contact" className="p-6 rounded-xl bg-gray-700/50 backdrop-blur-md text-white shadow-lg border border-white/10">
