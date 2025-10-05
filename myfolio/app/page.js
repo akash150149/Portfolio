@@ -13,9 +13,9 @@ export default function HomePage() {
         {/* Hero Section - Transparent with backdrop blur */}
         <section id="home" className="bg-black/30 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-white/10">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-lg">Hi There 👋 !</h1>
-          <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-lg">I'm Akash Poddar</h1>
+          <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-lg">I&apos;m Akash Poddar</h1>
           <p className="text-lg text-white/90 drop-shadow-md">
-            I'm a full-stack web developer skilled in React, Node.js, and exploring Next.js!
+            I&apos;m a full-stack web developer skilled in React, Node.js, and exploring Next.js!
           </p>
           <p className="mt-4">
             <a
@@ -32,7 +32,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-semibold mb-4 drop-shadow-lg">About Me</h2>
           <div>
             <h1 className="text-2xl font-bold drop-shadow-md">About Me</h1>
-            <p className="mt-2 text-white/90">I'm a web developer with experience in React, Node.js, and now learning Next.js.</p>
+            <p className="mt-2 text-white/90">I&apos;m a web developer with experience in React, Node.js, and now learning Next.js.</p>
           </div>
         </section>
 
@@ -40,7 +40,6 @@ export default function HomePage() {
         <section id="projects" className="p-6 rounded-xl bg-gray-900/50 backdrop-blur-lg text-white shadow-xl border border-white/20">
           <h2 className="text-3xl font-semibold mb-6 drop-shadow-lg">Featured Projects</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
 
             {/* Project: MedChain*/}
             <li className="p-4 border border-white/20 rounded-lg shadow-lg hover:shadow-xl transition bg-black/20 backdrop-blur-sm hover:bg-black/30">
@@ -83,8 +82,6 @@ export default function HomePage() {
                 </Link>
               </p>
             </li>
-
-            
           </ul>
         </section>
 
@@ -123,7 +120,7 @@ export default function HomePage() {
           </ul>
         </section>
 
-        {/* Contact Section - Subtle transparency */}
+        {/* Contact Section */}
         <section id="contact" className="p-6 rounded-xl bg-gray-700/50 backdrop-blur-md text-white shadow-lg border border-white/10">
           <h2 className="text-3xl font-semibold mb-4 drop-shadow-lg">Contact Me</h2>
           <p className="text-white/90">[Add your contact form or details here]</p>
