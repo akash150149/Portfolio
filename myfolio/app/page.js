@@ -56,7 +56,7 @@ export default function HomePage() {
                   View on GitHub
                 </a>
                 <br />
-                <Link href="/projects/aero" className="text-blue-400 underline mt-1 inline-block hover:text-blue-300">
+                <Link href="/projects/medchain" className="text-blue-400 underline mt-1 inline-block hover:text-blue-300">
                   View Details
                 </Link>
               </p>
