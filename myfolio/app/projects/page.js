@@ -23,6 +23,13 @@ const projects = [
     github: '#',
     live: '#'
   },
+  {
+    title: 'HaatBaazar - eCommerce Platform',
+    slug: 'haatbaazar',
+    description: 'A full-stack eCommerce web app with product browsing, cart/checkout flow, secure payments via Razorpay, and an admin dashboard.',
+    github: 'https://github.com/akash150149/HaatBaazar',
+    live: '#'
+  },
 ];
 
 export default function ProjectsPage() {
