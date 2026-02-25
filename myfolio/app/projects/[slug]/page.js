@@ -31,7 +31,7 @@ const projectDetails = {
     description:
       'HaatBaazar is a comprehensive eCommerce solution designed for seamless online shopping. It features a modern product browsing experience, a persistent shopping cart, and a streamlined checkout process. Secure payment integration with Razorpay ensures safe transactions, while the dedicated admin dashboard empowers merchants to manage products, categories, and track customer orders efficiently.',
     github: 'https://github.com/akash150149/HaatBaazar',
-    live: '#',
+    live: 'https://haat-baazar.onrender.com',
     tags: ['React', 'Node.js', 'MongoDB', 'Razorpay', 'Admin Dashboard']
   },
 };
