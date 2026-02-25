@@ -51,7 +51,7 @@ export default async function BlogDetail({ params }) {
                             <Clock size={14} className="text-green-500/50" /> {post.readTime}
                         </span>
                     </div>
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9]">
+                    <h1 className="heading-fluid font-bold">
                         {post.title}
                     </h1>
                     <div className="flex items-center gap-4 pt-4">

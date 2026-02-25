@@ -45,30 +45,33 @@ export default function ProjectsPage() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {projects.map((project) => (
             <div
               key={project.slug}
-              className="border border-white/5 bg-zinc-900/10 p-10 rounded-[2rem] flex flex-col h-full hover:border-white/20 transition-all space-y-8"
+              className="hover-card border border-white/5 bg-zinc-900/10 p-8 md:p-12 rounded-[2.5rem] flex flex-col h-full space-y-8"
             >
-              <h2 className="text-3xl font-bold">{project.title}</h2>
-              <p className="text-zinc text-lg leading-relaxed flex-grow">
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold">{project.title}</h2>
+                <div className="h-1 w-12 bg-green-500/50 rounded-full"></div>
+              </div>
+              <p className="text-zinc text-lg md:text-xl leading-relaxed flex-grow">
                 {project.description}
               </p>
 
-              <div className="space-y-6">
-                <div className="flex gap-4">
+              <div className="space-y-8 pt-4">
+                <div className="flex flex-wrap gap-4">
                   <a
                     href={project.github}
                     target="_blank"
-                    className="flex items-center gap-2 text-sm font-medium bg-white/5 hover:bg-white/10 px-6 py-3 rounded-xl transition-colors border border-white/10"
+                    className="flex items-center gap-3 text-sm font-medium bg-white/5 hover:bg-white/10 px-8 py-4 rounded-xl transition-all border border-white/10"
                   >
                     <Github size={20} /> GitHub
                   </a>
                   <a
                     href={project.live}
                     target="_blank"
-                    className="flex items-center gap-2 text-sm font-medium bg-green-600/10 text-green-400 hover:bg-green-600/20 px-6 py-3 rounded-xl transition-colors border border-green-400/20"
+                    className="flex items-center gap-3 text-sm font-medium bg-green-600/10 text-green-400 hover:bg-green-600/20 px-8 py-4 rounded-xl transition-all border border-green-400/20"
                   >
                     <ExternalLink size={20} /> Live Demo
                   </a>
@@ -76,9 +79,9 @@ export default function ProjectsPage() {
 
                 <Link
                   href={`/projects/${project.slug}`}
-                  className="flex items-center gap-1 text-zinc-500 hover:text-white text-sm font-medium transition-colors"
+                  className="flex items-center gap-2 text-zinc-500 hover:text-white text-sm font-mono uppercase tracking-widest transition-colors group"
                 >
-                  View Case Study <ArrowRight size={14} />
+                  Explore Project <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>

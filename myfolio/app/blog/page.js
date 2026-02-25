@@ -22,22 +22,21 @@ export default function BlogPage() {
             <Link
               key={blog.slug}
               href={`/blog/${blog.slug}`}
-              className="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:bg-white/[0.02] px-6 -mx-6 transition-colors rounded-2xl"
+              className="group flex flex-col md:flex-row md:items-center justify-between py-12 md:py-16 hover:bg-white/[0.02] px-6 -mx-6 transition-all rounded-3xl"
             >
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-zinc-500 text-sm font-mono uppercase tracking-widest">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 text-zinc-500 text-sm font-mono uppercase tracking-widest">
                   <Calendar size={14} className="text-green-500/50" />
                   {blog.date}
                 </div>
-                <h2 className="text-3xl font-bold group-hover:text-green-400 transition-colors">
+                <h2 className="text-3xl md:text-5xl font-bold group-hover:text-green-400 transition-colors tracking-tight">
                   {blog.title}
                 </h2>
-                <p className="text-zinc text-lg max-w-3xl leading-relaxed">
-                  {/* Extracting excerpt from first paragraph of content if available, or using a default */}
+                <p className="text-zinc text-lg md:text-xl max-w-3xl leading-relaxed">
                   {blog.excerpt || `A thrilling narrative about ${blog.title}.`}
                 </p>
               </div>
-              <ArrowRight className="hidden md:block text-zinc-600 group-hover:text-green-400 transform group-hover:translate-x-2 transition-all" size={32} />
+              <ArrowRight className="hidden md:block text-zinc-700 group-hover:text-green-400 transform group-hover:translate-x-6 transition-all" size={48} />
             </Link>
           ))}
         </div>

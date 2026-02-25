@@ -67,7 +67,7 @@ export default async function ProjectDetail({ params }) {
           {/* Main Content */}
           <div className="md:col-span-8 space-y-12">
             <header className="space-y-6">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight uppercase">
+              <h1 className="heading-fluid font-bold uppercase pb-4">
                 {project.title}
               </h1>
               <div className="flex flex-wrap gap-3">
