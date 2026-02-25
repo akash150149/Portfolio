@@ -30,7 +30,7 @@ export default function HomePage() {
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-white/10 bg-zinc-900 grayscale hover:grayscale-0 transition-all duration-700">
+              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-white/10 bg-zinc-900 transition-all duration-700">
                 <Image
                   src="/profile.jpg"
                   alt="Akash Poddar"
