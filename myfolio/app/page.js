@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronRight, Github, ExternalLink, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
@@ -29,8 +30,14 @@ export default function HomePage() {
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-white/10 bg-zinc-900 flex items-center justify-center text-white/10 text-4xl font-mono grayscale hover:grayscale-0 transition-all duration-700">
-                AP
+              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-white/10 bg-zinc-900 grayscale hover:grayscale-0 transition-all duration-700">
+                <Image
+                  src="/profile.jpg"
+                  alt="Akash Poddar"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
