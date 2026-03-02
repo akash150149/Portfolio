@@ -225,6 +225,87 @@ export const imaAttachment = {
                 </div>
             </section>
 
+            {/* Day 8 */}
+            <section className="space-y-8">
+                <div className="space-y-4">
+                    <div className="flex justify-between items-center bg-zinc-900/50 backdrop-blur-sm p-6 rounded-2xl border border-white/5 mb-4">
+                        <div>
+                            <h2 className="text-3xl md:text-4xl font-bold">Day 8: A Sunday with a Change of Pace</h2>
+                            <p className="text-xs font-mono text-zinc-600 mt-2 uppercase tracking-widest">Date: 29th December 2024</p>
+                        </div>
+                        <div className="h-px w-10 bg-green-500 hidden md:block"></div>
+                    </div>
+                </div>
+                <div className="text-zinc text-lg leading-relaxed space-y-6">
+                    <p>
+                        Being Sunday, the day started slightly later than usual. Our fall-in was at 0630 hrs, and that too in complete uniform on short notice. Even though it was a relaxed day compared to others, the expectation of readiness remained the same. Within minutes, everyone was dressed and assembled — a reminder that discipline does not take a break, even on Sundays.
+                    </p>
+                    <p>
+                        After fall-in, we proceeded for breakfast in the mess, enjoying the comparatively slower start to the day. There was a noticeable shift in the atmosphere — less rush, more conversations, and a bit of ease in everyone’s expressions.
+                    </p>
+                    <p>
+                        Later in the morning, we were taken to the Forest Research Institute (FRI), Dehradun. The campus was impressive — grand colonial architecture, vast green lawns, and a calm environment that felt very different from the strict military surroundings of IMA. We spent some time exploring the premises and, of course, clicking photos together. It was one of those moments where we could pause and simply enjoy being there — as cadets, as friends, and as a team.
+                    </p>
+                    <p>
+                        After returning, we had lunch at the mess, followed by preparations for the evening. Since the final cultural event was approaching, we had an extended cultural practice session. This time, it wasn’t just rehearsal — we were instructed to present a demo performance in the evening. That added a sense of seriousness to the practice. Everyone was focused, refining their parts, coordinating timings, and ensuring the presentation was smooth.
+                    </p>
+                    <p>
+                        In the evening, we assembled again for roll call during fall-in, maintaining the usual routine. After dinner, we returned to our barracks. Compared to the physically intense days earlier in the camp, this Sunday felt balanced — a mix of discipline, exposure outside the Academy, and preparation for the closing celebrations.
+                    </p>
+                    <p>
+                        The day ended on a calm note, but the anticipation for the final cultural showcase was steadily building.
+                    </p>
+                </div>
+                <div className="aspect-video bg-zinc-900/50 backdrop-blur-sm rounded-[2.5rem] flex items-center justify-center border border-white/5 text-zinc-600 italic overflow-hidden">
+                    <div className="text-center p-8">
+                        <p>Photo: Forest Research Institute (FRI), Dehradun</p>
+                        <span className="text-xs uppercase tracking-widest opacity-50">Placeholder</span>
+                    </div>
+                </div>
+            </section>
+
+            {/* Day 9 */}
+            <section className="space-y-8">
+                <div className="space-y-4">
+                    <div className="flex justify-between items-center bg-zinc-900/50 backdrop-blur-sm p-6 rounded-2xl border border-white/5 mb-4">
+                        <div>
+                            <h2 className="text-3xl md:text-4xl font-bold">Day 9: Endurance and Exposure</h2>
+                            <p className="text-xs font-mono text-zinc-600 mt-2 uppercase tracking-widest">Date: 30th December 2024</p>
+                        </div>
+                        <div className="h-px w-10 bg-green-500 hidden md:block"></div>
+                    </div>
+                </div>
+                <div className="text-zinc text-lg leading-relaxed space-y-6">
+                    <p>
+                        Day 9 began with one of the most intense PT sessions we had experienced so far. There was no easing into the morning — it was straight into endurance mode.
+                    </p>
+                    <p>
+                        We started with a 2.4 km run, pushing ourselves to maintain pace despite the cold December air. What made it challenging was not just the distance, but the expectation to finish strong and disciplined. Immediately after the run, we moved into body-weight exercises — crunches, push-ups, stretching drills, and sprint intervals. The sequence was demanding, leaving everyone breathless but determined. By the end of the session, fatigue was visible, yet so was a sense of achievement. It was one of those mornings that tested physical stamina and mental resilience equally.
+                    </p>
+                    <p>
+                        After breakfast and a brief recovery period, the focus shifted from physical endurance to academic and institutional exposure.
+                    </p>
+                    <p>
+                        Our first stop was the Central Library of IMA. The atmosphere inside was quiet and disciplined — shelves lined with books on military strategy, history, leadership, geopolitics, and warfare. It was clear that becoming an officer is not just about physical strength, but also intellectual development. The Academy emphasizes both.
+                    </p>
+                    <p>
+                        Next, we visited the Gurukul Academic Building, where Gentleman Cadets undergo their academic training. Seeing the lecture halls and classrooms reinforced the idea that officer training is structured, systematic, and academically rigorous.
+                    </p>
+                    <p>
+                        We were then taken to Poonch Company, where we got a glimpse of how company-level organization functions within the Academy. Observing their living areas, routine structure, and company culture gave us insight into the everyday life of a Gentleman Cadet.
+                    </p>
+                    <p>
+                        Later, we visited the Vikram Batra Mess again. Each visit to such places carried weight — not just because of the names they bear, but because of the legacy associated with them.
+                    </p>
+                    <p>
+                        The evening was reserved for cultural practice, as preparations for the final showcase were nearing completion. Despite the exhausting PT in the morning, participation remained enthusiastic. Everyone was determined to give their best performance.
+                    </p>
+                    <p>
+                        Day 9 stood out for its contrast — intense physical testing in the morning, followed by exposure to the academic and structural framework that shapes future Army officers. It was a reminder that training at IMA is comprehensive — body, mind, and character.
+                    </p>
+                </div>
+            </section>
+
             <footer className="pt-12 border-t border-white/5">
                 <p className="text-zinc italic text-sm">
                     These 12 days were not just about drills and discipline — they were about bonding, learning leadership, and witnessing the essence of the Indian Army&apos;s spirit. I carry these memories proudly and hope to revisit the gates of IMA someday.
