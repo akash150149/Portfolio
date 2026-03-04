@@ -3,6 +3,13 @@ import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 
 const projects = [
   {
+    title: 'AlgoMakan - Web3 Real Estate',
+    slug: 'algomakan',
+    description: 'A premium decentralized real estate marketplace on Algorand for browsing and investing in property NFTs.',
+    github: 'https://github.com/akash150149/AlgoMakan',
+    live: '#'
+  },
+  {
     title: 'MedChain',
     slug: 'medchain',
     description: 'A decentralized web-based system for authenticating medicines and preventing counterfeiting, built on Filecoin and Hypergraph.',

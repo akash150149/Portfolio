@@ -2,6 +2,26 @@ import Link from 'next/link';
 import { ArrowLeft, Github, ExternalLink, ChevronRight } from 'lucide-react';
 
 const projectDetails = {
+  algomakan: {
+    title: 'AlgoMakan - Decentralized Real Estate Marketplace',
+    description:
+      'AlgoMakan is a premium real estate marketplace built on the Algorand blockchain. It enables users to browse, invest in, and own property collectibles (NFTs) with the security and transparency of decentralized technology. The platform features secure escrow via smart contracts, seamless wallet integration with Pera, and a responsive interface designed for real estate presentation.',
+    github: 'https://github.com/akash150149/AlgoMakan',
+    live: '#',
+    tags: ['Algorand', 'TypeScript', 'PuYA TS', 'AlgoKit', 'React', 'Tailwind CSS'],
+    features: [
+      'Real Estate NFTs: Properties represented as unique Assets (ASA) on Algorand.',
+      'Secure Escrow: Smart contracts manage trustless ALGO-to-NFT exchange.',
+      'Wallet Integration: Full support for Pera Wallet and other Algorand providers.',
+      'Monorepo Architecture: Managed with AlgoKit for consistent development flow.'
+    ],
+    roadmap: [
+      'Fractional Ownership: Splitting property NFTs into tradable tokens.',
+      'On-Chain Rentals: Automatic rent collection and distribution.',
+      'IPFS Integration: Permanent, tamper-proof storage for deeds and documents.',
+      'Community Governance: DAO structure for listing verification.'
+    ]
+  },
   medchain: {
     title: 'MedChain',
     description:
@@ -85,6 +105,33 @@ export default async function ProjectDetail({ params }) {
                 {project.description}
               </p>
             </div>
+
+            {project.features && (
+              <div className="space-y-8">
+                <h2 className="text-2xl font-bold">Key Features</h2>
+                <ul className="space-y-4">
+                  {project.features.map((feature, index) => (
+                    <li key={index} className="flex gap-4 text-zinc text-lg leading-relaxed text-zinc-400">
+                      <span className="text-green-500 font-mono">0{index + 1}.</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {project.roadmap && (
+              <div className="space-y-8">
+                <h2 className="text-2xl font-bold">Future Roadmap</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {project.roadmap.map((item, index) => (
+                    <div key={index} className="p-6 rounded-2xl bg-zinc-900/50 border border-white/5 text-zinc-400">
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="aspect-video bg-zinc-900 rounded-[2rem] border border-white/5 flex items-center justify-center text-zinc-600 italic">
               [📷 Image Placeholder: Project Dashboard Preview]

@@ -56,8 +56,34 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Project: AlgoMakan*/}
+            <div className="hover-card border border-white/5 bg-zinc-900/20 p-8 md:p-10 rounded-3xl space-y-6 text-left">
+              <div className="space-y-2">
+                <span className="text-xs font-mono text-green-500/60 uppercase tracking-widest">Web3 • Algorand</span>
+                <h3 className="text-3xl font-bold">AlgoMakan</h3>
+              </div>
+              <p className="text-zinc text-lg leading-relaxed flex-grow">
+                A premium real estate marketplace built on Algorand. Browse, invest, and own properties as NFTs with secure smart contract escrows.
+              </p>
+              <div className="flex flex-wrap gap-4 pt-4">
+                <a
+                  href="https://github.com/akash150149/AlgoMakan"
+                  target="_blank"
+                  className="flex items-center gap-2 text-sm font-medium bg-white/5 hover:bg-white/10 px-6 py-3 rounded-xl transition-all border border-white/10"
+                >
+                  <Github size={18} /> GitHub
+                </a>
+                <Link
+                  href="/projects/algomakan"
+                  className="flex items-center gap-2 text-sm font-medium bg-green-600/10 text-green-400 hover:bg-green-600/20 px-6 py-3 rounded-xl transition-all border border-green-400/20"
+                >
+                  <ExternalLink size={18} /> Details
+                </Link>
+              </div>
+            </div>
+
             {/* Project: MedChain*/}
-            <div className="hover-card border border-white/5 bg-zinc-900/20 p-8 md:p-10 rounded-3xl space-y-6">
+            <div className="hover-card border border-white/5 bg-zinc-900/20 p-8 md:p-10 rounded-3xl space-y-6 text-left">
               <div className="space-y-2">
                 <span className="text-xs font-mono text-green-500/60 uppercase tracking-widest">Web3 • Filecoin</span>
                 <h3 className="text-3xl font-bold">MedChain</h3>
@@ -167,7 +193,7 @@ export default function HomePage() {
             </p>
             <div className="pt-8 flex justify-center">
               <a
-                href="mailto:contact@akashpoddar.me"
+                href="mailto:akashpoddar.elevensc.2020@gmail.com"
                 className="btn-primary text-xl px-12 py-5"
               >
                 Get In Touch

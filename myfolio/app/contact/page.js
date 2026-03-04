@@ -4,15 +4,15 @@ export default function ContactPage() {
   const contactMethods = [
     {
       name: 'Email',
-      value: 'contact@akashpoddar.me',
-      link: 'mailto:contact@akashpoddar.me',
+      value: 'akashpoddar.elevensc.2020@gmail.com',
+      link: 'mailto:akashpoddar.elevensc.2020@gmail.com',
       icon: <Mail className="text-green-400" size={24} />,
       label: 'Send an email'
     },
     {
       name: 'Phone',
-      value: '+91 00000 00000',
-      link: 'tel:+910000000000',
+      value: '+91 7980682871',
+      link: 'tel:+917980682871',
       icon: <Phone className="text-green-400" size={24} />,
       label: 'Call or WhatsApp'
     },
@@ -25,15 +25,15 @@ export default function ContactPage() {
     },
     {
       name: 'LinkedIn',
-      value: 'Akash Poddar',
-      link: 'https://linkedin.com/in/akashpoddar',
+      value: 'akash150149',
+      link: 'https://www.linkedin.com/in/akash150149/',
       icon: <Linkedin className="text-green-400" size={24} />,
       label: 'Connect with me'
     },
     {
       name: 'Twitter',
-      value: '@akashpoddar',
-      link: 'https://twitter.com/akashpoddar',
+      value: '@akash150149',
+      link: 'https://x.com/akash150149',
       icon: <Twitter className="text-green-400" size={24} />,
       label: 'Follow me'
     }
@@ -94,7 +94,7 @@ export default function ContactPage() {
               </p>
               <div className="pt-4 flex justify-center">
                 <a
-                  href="mailto:contact@akashpoddar.me"
+                  href="mailto:akashpoddar.elevensc.2020@gmail.com"
                   className="btn-primary text-xl px-12 py-5"
                 >
                   Start a Conversation
