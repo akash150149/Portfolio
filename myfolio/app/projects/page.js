@@ -1,95 +1,85 @@
+'use client';
 import Link from 'next/link';
-import { Github, ExternalLink, ArrowRight } from 'lucide-react';
+import { ArrowUpRight, Github, MapPin } from 'lucide-react';
 
 const projects = [
   {
-    title: 'AlgoMakan - Web3 Real Estate',
-    slug: 'algomakan',
-    description: 'A premium decentralized real estate marketplace on Algorand for browsing and investing in property NFTs.',
-    github: 'https://github.com/akash150149/AlgoMakan',
-    live: '#'
+    title: "MedChain",
+    description: "A decentralized healthcare platform built on blockchain, ensuring secure and transparent medical record management.",
+    tags: ["Web3", "Blockchain", "Healthcare", "Next.js"],
+    link: "https://github.com/debjitmitra000/MedChain",
+    color: "bg-emerald-50"
   },
   {
-    title: 'MedChain',
-    slug: 'medchain',
-    description: 'A decentralized web-based system for authenticating medicines and preventing counterfeiting, built on Filecoin and Hypergraph.',
-    github: 'https://github.com/debjitmitra000/MedChain',
-    live: '#'
+    title: "HaatBaazar",
+    description: "A full-featured eCommerce platform developed with the MERN stack, offering a seamless shopping experience.",
+    tags: ["eCommerce", "MERN", "React", "Node.js"],
+    link: "https://github.com/akash150149/HaatBaazar",
+    color: "bg-gray-50"
+  },
+  {
+    title: "AlgoMakan",
+    description: "A Web3 property listing and real estate platform, leveraging smart contracts for secure transactions.",
+    tags: ["Web3", "Real Estate", "Smart Contracts"],
+    link: "https://github.com/akash150149/AlgoMakan",
+    color: "bg-blue-50"
   },
   {
     title: 'Apna - Web3 Property Marketplace',
-    slug: 'apna',
     description: 'A decentralized platform to buy and sell property NFTs with MetaMask integration and blockchain-backed ownership.',
-    github: 'https://github.com/akash150149/Apna',
-    live: '#'
+    tags: ["Web3", "NFT", "Ethereum"],
+    link: 'https://github.com/akash150149/Apna',
+    color: "bg-purple-50"
   },
   {
     title: 'Aero - Airline Booking System',
-    slug: 'aero',
     description: 'A MERN-based airline booking system with Razorpay integration for payments and secure user authentication.',
-    github: '#',
-    live: '#'
-  },
-  {
-    title: 'HaatBaazar - eCommerce Platform',
-    slug: 'haatbaazar',
-    description: 'A full-stack eCommerce web app with product browsing, cart/checkout flow, secure payments via Razorpay, and an admin dashboard.',
-    github: 'https://github.com/akash150149/HaatBaazar',
-    live: 'https://haat-baazar.onrender.com'
+    tags: ["MERN", "Authentication", "Razorpay"],
+    link: '#',
+    color: "bg-orange-50"
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-black min-h-screen text-white pt-32 pb-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <header className="mb-20">
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8">
+    <div className="min-h-screen pt-24 pb-24">
+      <div className="container-narrow space-y-24">
+        <header className="space-y-6 text-center md:text-left">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white">
             Projects
           </h1>
-          <p className="text-zinc text-xl max-w-2xl font-mono">
+          <p className="text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl">
             A showcase of my work in full-stack development, decentralized applications, and modern web tech.
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div
-              key={project.slug}
-              className="hover-card border border-white/5 bg-zinc-900/10 p-8 md:p-12 rounded-[2.5rem] flex flex-col h-full space-y-8"
-            >
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold">{project.title}</h2>
-                <div className="h-1 w-12 bg-green-500/50 rounded-full"></div>
-              </div>
-              <p className="text-zinc text-lg md:text-xl leading-relaxed flex-grow">
-                {project.description}
-              </p>
-
-              <div className="space-y-8 pt-4">
-                <div className="flex flex-wrap gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="flex items-center gap-3 text-sm font-medium bg-white/5 hover:bg-white/10 px-8 py-4 rounded-xl transition-all border border-white/10"
-                  >
-                    <Github size={20} /> GitHub
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    className="flex items-center gap-3 text-sm font-medium bg-green-600/10 text-green-400 hover:bg-green-600/20 px-8 py-4 rounded-xl transition-all border border-green-400/20"
-                  >
-                    <ExternalLink size={20} /> Live Demo
-                  </a>
+            <div key={project.title} className="group flex flex-col bg-white dark:bg-gray-900 rounded-[2rem] border border-gray-100 dark:border-gray-800 overflow-hidden hover:border-emerald-200 dark:hover:border-emerald-800 transition-all hover:shadow-xl">
+              <div className={`aspect-[16/10] relative overflow-hidden ${project.color} dark:bg-gray-800/50 flex items-center justify-center`}>
+                <div className="text-gray-300 dark:text-gray-700 font-bold text-3xl group-hover:scale-110 transition-transform duration-500">
+                  {project.title}
                 </div>
-
-                <Link
-                  href={`/projects/${project.slug}`}
-                  className="flex items-center gap-2 text-zinc-500 hover:text-white text-sm font-mono uppercase tracking-widest transition-colors group"
-                >
-                  Explore Project <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
+              </div>
+              <div className="p-8 md:p-10 space-y-6 flex-grow flex flex-col">
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold tracking-tight dark:text-white">{project.title}</h2>
+                  <p className="text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-auto pt-4">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="px-3 py-1 rounded-full bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-100 dark:border-gray-800">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="pt-6 border-t border-gray-100 dark:border-gray-800">
+                  <Link href={project.link} target="_blank" className="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-gray-900 dark:border-white pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all dark:text-white">
+                    View Project <ArrowUpRight size={16} />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
