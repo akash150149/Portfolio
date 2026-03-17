@@ -62,7 +62,7 @@ export default function HomePage() {
             </h1>
             <p className="text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg">
               {/* I&apos;m Akash Poddar, a full-stack developer based in India. I specialize in building high-performance web applications using React, Node.js, and Blockchain technologies. */}
-              I'm Akash, a Full-Stack Developer who turns complex requirements into seamless digital experiences. Whether it's a WEB2 MERN Stack Based Project or a WEB3 based Project, I build for scale and security.
+              I&apos;m Akash, a Full-Stack Developer who turns complex requirements into seamless digital experiences. Whether it&apos;s a WEB2 MERN Stack Based Project or a WEB3 based Project, I build for scale and security.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm font-medium">
@@ -189,9 +189,18 @@ export default function HomePage() {
             {blogs.map((blog) => (
               <Link key={blog.slug} href={`/blog/${blog.slug}`} className="group space-y-6 block">
                 <div className="aspect-[16/9] rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 overflow-hidden relative group-hover:border-emerald-200 dark:group-hover:border-emerald-800 transition-all">
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-200 dark:text-gray-800">
-                    Blog Preview
-                  </div>
+                  {blog.backgroundImage ? (
+                    <Image
+                      src={blog.backgroundImage}
+                      alt={blog.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center text-gray-200 dark:text-gray-800">
+                      Blog Preview
+                    </div>
+                  )}
                 </div>
                 <div className="space-y-3">
                   <div className="text-xs text-gray-400 dark:text-gray-500 font-medium">March 16, 2026 • 5 min read</div>
