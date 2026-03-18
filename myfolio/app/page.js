@@ -9,6 +9,15 @@ export default function HomePage() {
 
   const projects = [
     {
+      title: "SkyLens Intelligence",
+      description: "A modern aviation dashboard acting as an advanced heads-up display. Features real-time METAR weather, Gemini AI pilot briefings, and Vision AI to extract essential data from aviation approach plates.",
+      tags: ["React", "Node.js", "Tailwind CSS", "Gemini AI"],
+      link: "https://github.com/akash150149/Skylens-Intelligence",
+      demoLink: "https://skylens-xwid.onrender.com",
+      image: "/projects/skylens.png",
+      color: "bg-sky-50"
+    },
+    {
       title: "MedChain",
       description: "A decentralized healthcare platform built on blockchain, ensuring secure and transparent medical record management.",
       tags: ["Web3", "Blockchain", "Healthcare", "Next.js"],
@@ -158,10 +167,15 @@ export default function HomePage() {
                       </span>
                     ))}
                   </div>
-                  <div className="pt-4">
+                  <div className="pt-4 flex flex-wrap gap-6 items-center">
                     <Link href={project.link} target="_blank" className="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-gray-900 dark:border-white pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all dark:text-white">
-                      View on GitHub <ArrowUpRight size={16} />
+                      View on GitHub <Github size={16} />
                     </Link>
+                    {project.demoLink && (
+                      <Link href={project.demoLink} target="_blank" className="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-gray-900 dark:border-white pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all dark:text-white">
+                        Live Demo <ExternalLink size={16} />
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
