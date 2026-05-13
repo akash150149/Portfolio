@@ -9,7 +9,24 @@ export default function HomePage() {
 
   const projects = [
     {
+      title: "GeoIntel",
+      slug: "geointel",
+      description: "An automated, AI-driven news intelligence system that transforms daily news into structured briefs and visual mind maps using Gemini 1.5 Flash.",
+      tags: ["Node.js", "Gemini AI", "Resend API", "Mermaid.js"],
+      link: "https://github.com/akash150149/GeoIntel",
+      color: "bg-green-50"
+    },
+    {
+      title: "Inbox AI",
+      slug: "inbox-ai",
+      description: "An AI-powered email management system that uses Gemini to surface only critical emails requiring human intervention, significantly speeding up daily communication workflows.",
+      tags: ["Gemini AI", "React", "Node.js", "Tailwind CSS"],
+      link: "https://github.com/akash150149/Inbox-AI",
+      color: "bg-indigo-50"
+    },
+    {
       title: "SkyLens Intelligence",
+      slug: "skylens-intelligence",
       description: "A modern aviation dashboard acting as an advanced heads-up display. Features real-time METAR weather, Gemini AI pilot briefings, and Vision AI to extract essential data from aviation approach plates.",
       tags: ["React", "Node.js", "Tailwind CSS", "Gemini AI"],
       link: "https://github.com/akash150149/Skylens-Intelligence",
@@ -19,6 +36,7 @@ export default function HomePage() {
     },
     {
       title: "MedChain",
+      slug: "medchain",
       description: "A decentralized healthcare platform built on blockchain, ensuring secure and transparent medical record management.",
       tags: ["Web3", "Blockchain", "Healthcare", "Next.js"],
       link: "https://github.com/debjitmitra000/MedChain",
@@ -27,6 +45,7 @@ export default function HomePage() {
     },
     {
       title: "HaatBaazar",
+      slug: "haatbaazar",
       description: "A full-featured eCommerce platform developed with the MERN stack, offering a seamless shopping experience.",
       tags: ["eCommerce", "MERN", "React", "Node.js"],
       link: "https://github.com/akash150149/HaatBaazar",
@@ -35,6 +54,7 @@ export default function HomePage() {
     },
     {
       title: "AlgoMakan",
+      slug: "algomakan",
       description: "A Web3 property listing and real estate platform, leveraging smart contracts for secure transactions.",
       tags: ["Web3", "Real Estate", "Smart Contracts"],
       link: "https://github.com/akash150149/AlgoMakan",
@@ -146,13 +166,13 @@ export default function HomePage() {
           <div className="space-y-32">
             {projects.map((project, index) => (
               <div key={project.title} className={`flex flex-col lg:flex-row gap-12 lg:gap-20 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className="flex-1 w-full">
-                  <div className={`relative aspect-[16/10] rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm ${project.color} dark:bg-gray-900`}>
+                <Link href={`/projects/${project.slug}`} className="flex-1 w-full group">
+                  <div className={`relative aspect-[16/10] rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm ${project.color} dark:bg-gray-900 transition-transform duration-500 group-hover:scale-[1.02]`}>
                     <div className="absolute inset-0 flex items-center justify-center text-gray-300 dark:text-gray-700 font-bold text-4xl">
                       {project.title} Preview
                     </div>
                   </div>
-                </div>
+                </Link>
                 <div className="flex-1 space-y-8">
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold tracking-tight dark:text-white">{project.title}</h3>
@@ -168,8 +188,11 @@ export default function HomePage() {
                     ))}
                   </div>
                   <div className="pt-4 flex flex-wrap gap-6 items-center">
+                    <Link href={`/projects/${project.slug}`} className="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-gray-900 dark:border-white pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all dark:text-white">
+                      Case Study <ArrowUpRight size={16} />
+                    </Link>
                     <Link href={project.link} target="_blank" className="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-gray-900 dark:border-white pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all dark:text-white">
-                      View on GitHub <Github size={16} />
+                      GitHub <Github size={16} />
                     </Link>
                     {project.demoLink && (
                       <Link href={project.demoLink} target="_blank" className="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-gray-900 dark:border-white pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all dark:text-white">

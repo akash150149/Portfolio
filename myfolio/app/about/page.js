@@ -28,7 +28,7 @@ export default function AboutPage() {
                 I am a <span className="text-emerald-600 dark:text-emerald-400 font-bold">Full-Stack and Web3 Developer</span> focused on building functional, high-performance applications using the MERN stack and blockchain technologies.
               </p>
               <p className="text-lg text-gray-500 dark:text-gray-400 leading-relaxed">
-                My work spans from developing intuitive eCommerce platforms like <span className="text-gray-900 dark:text-white font-medium">Haat Baazar</span> to architecting decentralized systems such as <span className="text-gray-900 dark:text-white font-medium">AlgoMakan</span> and <span className="text-gray-900 dark:text-white font-medium">MedChain</span>. I thrive at the intersection of modern web design and disruptive technology.
+                My work spans from developing AI-powered tools like <span className="text-gray-900 dark:text-white font-medium">GeoIntel</span>, <span className="text-gray-900 dark:text-white font-medium">Inbox AI</span> and <span className="text-gray-900 dark:text-white font-medium">SkyLens Intelligence</span>, to architecting decentralized systems such as <span className="text-gray-900 dark:text-white font-medium">AlgoMakan</span> and <span className="text-gray-900 dark:text-white font-medium">MedChain</span>. I thrive at the intersection of modern web design and disruptive technology.
               </p>
             </div>
 

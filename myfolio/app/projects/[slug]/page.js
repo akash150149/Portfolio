@@ -2,6 +2,66 @@ import Link from 'next/link';
 import { ArrowLeft, Github, ExternalLink, ChevronRight } from 'lucide-react';
 
 const projectDetails = {
+  geointel: {
+    title: 'GeoIntel - AI-Driven News Intelligence',
+    description:
+      'GeoIntel is an automated intelligence system designed for competitive exam preparation. It transforms the overwhelming daily news cycle into a structured, visual, and actionable briefing. By orchestrating data from RSS feeds, YouTube insights, and local PDFs, it provides a comprehensive 360-degree view of global events with minimal manual effort.',
+    github: 'https://github.com/akash150149/GeoIntel',
+    live: '#',
+    tags: ['Node.js', 'Google Gemini 1.5 Flash', 'RSS Parser', 'Resend API', 'Mermaid.js'],
+    features: [
+      'Multi-Channel Aggregation: Collection from RSS feeds, YouTube Data API, and PDF ingestion.',
+      'AI Synthesized Briefing: Categorization into International Relations, Economy, and Sci-Tech.',
+      'Dynamic Mind Mapping: Mermaid.js visual mind maps illustrating cause-and-effect relationships.',
+      'Cron-Scheduled Delivery: Automated daily 7:00 AM briefing sent via Resend API.'
+    ],
+    roadmap: [
+      'Interactive Dashboard: Web-based repository for historical news briefs.',
+      'Sentiment Analysis: Tracking global sentiment trends on specific geopolitical topics.',
+      'Voice Briefing: AI-generated daily news podcast for on-the-go listening.',
+      'Collaborative Intelligence: Shared workspaces for study groups and exam preparation.'
+    ]
+  },
+  'inbox-ai': {
+    title: 'Inbox AI - Intelligent Email Management',
+    description:
+      'Inbox AI is an advanced email management system designed to declutter your inbox and prioritize meaningful communication. By offloading the initial "reading" of unread threads to a Gemini-powered agent, the system provides a structured dashboard that surfaces only the emails requiring actual human intervention. This intelligent filtering significantly speeds up daily communication workflows and reduces digital fatigue.',
+    github: 'https://github.com/akash150149/Inbox-AI',
+    live: '#',
+    tags: ['Gemini AI', 'React', 'Node.js', 'Tailwind CSS', 'Google OAuth'],
+    features: [
+      'Automated Thread Analysis: Gemini AI reads and summarizes unread email threads.',
+      'Priority Dashboard: Surfacing only emails that require human attention.',
+      'Seamless Integration: Connects directly with Gmail via secure OAuth.',
+      'Smart Categorization: Automatically groups related communications.'
+    ],
+    roadmap: [
+      'Auto-Drafting: Suggested AI responses based on thread context.',
+      'Advanced Filtering: Customizable rules for AI prioritization.',
+      'Multi-Platform Support: Integration with Outlook and other providers.',
+      'Mobile Application: Manage your AI-powered inbox on the go.'
+    ]
+  },
+  'skylens-intelligence': {
+    title: 'SkyLens Intelligence - Aviation HUD & Analysis',
+    description:
+      'SkyLens Intelligence is a modern, responsive aviation dashboard designed for pilots and flight dispatchers. It acts as an advanced heads-up display (HUD) for critical flight operations, integrating real-time METAR weather data and utilizing Vision AI to scan and extract essential data from aviation approach plates.',
+    github: 'https://github.com/akash150149/Skylens-Intelligence',
+    live: 'https://skylens-xwid.onrender.com',
+    tags: ['React', 'Node.js', 'Tailwind CSS', 'Gemini AI', 'Vision AI'],
+    features: [
+      'Real-time METAR Integration: Live weather data for airports worldwide.',
+      'AI Pilot Briefings: Instant professional briefings generated via Gemini AI.',
+      'Vision AI Chart Deck: Automatic data extraction from uploaded approach plates.',
+      'Centralized Intelligence: Streamlined pre-flight analysis hub.'
+    ],
+    roadmap: [
+      'NOTAM Integration: Real-time notices to airmen integration.',
+      'Flight Path Visualization: Interactive 3D maps for planned routes.',
+      'Offline Support: Essential data caching for in-flight access.',
+      'Advanced Risk Assessment: AI-driven safety scoring for flight routes.'
+    ]
+  },
   algomakan: {
     title: 'AlgoMakan - Decentralized Real Estate Marketplace',
     description:
